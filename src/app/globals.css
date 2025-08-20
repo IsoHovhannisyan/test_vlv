@@ -23,4 +23,67 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+/* Mobile-specific optimizations */
+.safe-area-inset {
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Hide scrollbar for mobile */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Touch optimizations */
+.touch-manipulation {
+  touch-action: manipulation;
+}
+
+/* iOS Safari specific fixes */
+@supports (-webkit-touch-callout: none) {
+  .safe-area-inset {
+    padding-left: max(env(safe-area-inset-left), 1rem);
+    padding-right: max(env(safe-area-inset-right), 1rem);
+    padding-top: max(env(safe-area-inset-top), 1rem);
+    padding-bottom: max(env(safe-area-inset-bottom), 1rem);
+  }
+}
+
+/* Android Chrome specific fixes */
+@media screen and (max-width: 768px) {
+  .safe-area-inset {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Custom breakpoint for video player at exactly 484px */
+@media screen and (max-width: 483px) {
+  .video-player-mobile {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+@media screen and (min-width: 484px) {
+  .video-player-desktop {
+    max-width: 484px !important;
+    margin: 0 1rem !important;
+  }
 }
