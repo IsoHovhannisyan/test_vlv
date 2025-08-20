@@ -192,11 +192,11 @@ export default function Home() {
         </h1>
         
         {/* Video Stories Container */}
-        <div className="flex gap-4 md:gap-8 pb-4 overflow-x-auto scrollbar-hide">
+        <div className="flex gap-4 md:gap-8 pb-4 overflow-x-auto scrollbar-hide thumbnail-container">
           {videoStories.map((story, index) => (
             <div 
               key={story.id}
-              className="flex-shrink-0 cursor-pointer transition-all duration-300 touch-manipulation"
+              className="flex-shrink-0 cursor-pointer transition-all duration-300 touch-manipulation thumbnail-item"
               style={{
                 width: '114px',
                 height: '159px',

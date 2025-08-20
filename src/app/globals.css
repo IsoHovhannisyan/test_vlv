@@ -87,3 +87,21 @@ body {
     margin: 0 1rem !important;
   }
 }
+
+/* Prevent vertical scroll in thumbnail section */
+.thumbnail-container {
+  overflow-y: hidden !important;
+  overflow-x: auto;
+  height: auto;
+  max-height: none;
+}
+
+.thumbnail-container::-webkit-scrollbar {
+  display: none;
+}
+
+.thumbnail-item {
+  flex-shrink: 0;
+  height: auto;
+  overflow: visible;
+}
