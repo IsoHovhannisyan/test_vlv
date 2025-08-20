@@ -300,7 +300,7 @@ export default function Home() {
                 <div className="absolute bottom-8 right-6 flex flex-col items-center gap-6 z-50 pointer-events-auto">
                   {/* Like Button */}
                   <button 
-                    className="w-12 h-12 bg-black bg-opacity-60 rounded-full flex items-center justify-center hover:bg-opacity-80 active:bg-opacity-90 transition-all duration-200 touch-manipulation"
+                    className="w-12 h-12 bg-black bg-opacity-60 rounded-full flex items-center justify-center hover:bg-white hover:text-red-500 cursor-pointer transition-all duration-200 touch-manipulation"
                     onTouchStart={(e) => e.stopPropagation()}
                     onTouchMove={(e) => e.stopPropagation()}
                     onTouchEnd={(e) => e.stopPropagation()}
@@ -311,14 +311,14 @@ export default function Home() {
                       console.log('Like button clicked!');
                     }}
                   >
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-6 h-6 text-white hover:text-red-500" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/>
                     </svg>
                   </button>
 
                   {/* Play Button */}
                   <button 
-                    className="w-12 h-12 bg-black bg-opacity-60 rounded-full flex items-center justify-center hover:bg-opacity-80 active:bg-opacity-90 transition-all duration-200 touch-manipulation"
+                    className="w-12 h-12 bg-black bg-opacity-60 rounded-full flex items-center justify-center hover:bg-white hover:text-red-500 cursor-pointer transition-all duration-200 touch-manipulation"
                     onTouchStart={(e) => e.stopPropagation()}
                     onTouchMove={(e) => e.stopPropagation()}
                     onTouchEnd={(e) => e.stopPropagation()}
@@ -337,11 +337,11 @@ export default function Home() {
                     }}
                   >
                     {isPlaying ? (
-                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-6 h-6 text-white hover:text-red-500" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
                       </svg>
                     ) : (
-                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-6 h-6 text-white hover:text-red-500" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M8 5v14l11-7z"/>
                       </svg>
                     )}
@@ -349,7 +349,7 @@ export default function Home() {
 
                   {/* Volume Button */}
                   <button 
-                    className="w-12 h-12 bg-black bg-opacity-60 rounded-full flex items-center justify-center hover:bg-opacity-80 active:bg-opacity-90 transition-all duration-200 touch-manipulation"
+                    className="w-12 h-12 bg-black bg-opacity-60 rounded-full flex items-center justify-center hover:bg-white hover:text-red-500 cursor-pointer transition-all duration-200 touch-manipulation"
                     onTouchStart={(e) => e.stopPropagation()}
                     onTouchMove={(e) => e.stopPropagation()}
                     onTouchEnd={(e) => e.stopPropagation()}
@@ -367,11 +367,11 @@ export default function Home() {
                     }}
                   >
                     {isMuted ? (
-                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-6 h-6 text-white hover:text-red-500" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M16.5 12c0-1.77-1.02-3.25-2.5-4v8c1.48-.75 2.5-2.23 2.5-4zM5 9v6h4l5 5V4L9 9H5z"/>
                       </svg>
                     ) : (
-                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-6 h-6 text-white hover:text-red-500" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
                       </svg>
                     )}
