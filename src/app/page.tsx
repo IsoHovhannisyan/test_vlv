@@ -21,42 +21,42 @@ export default function Home() {
     {
       id: 1,
       video: "https://vlv.am/public/uploads/video_stories/175267690017264886181725019727IMG_1349%20(1).mov",
-      thumbnail: "https://picsum.photos/90/90?random=1",
+      thumbnail: "https://vlv.am/public/uploads/all/6877ba17d2e67.webp",
       text: "Սպիտակեղենի նոր տեսականի",
       alt: "Bed with white linens and painting"
     },
     {
       id: 2,
       video: "https://vlv.am/public/uploads/video_stories/1748509752IMG_7587.MOV",
-      thumbnail: "https://picsum.photos/90/90?random=2",
+      thumbnail: "https://vlv.am/public/uploads/all/6838241d13d94.webp",
       text: "Ամառանոցային կահույք",
       alt: "Woman in white polo shirt with red logo"
     },
     {
       id: 3,
       video: "https://vlv.am/public/uploads/video_stories/1747379923IMG_7957.MOV",
-      thumbnail: "https://picsum.photos/90/90?random=3",
+      thumbnail: "https://vlv.am/public/uploads/all/6826e69f999a7.webp",
       text: "Օդորակիչներ",
       alt: "Man in light blue checkered shirt with wall units"
     },
     {
       id: 4,
       video: "https://vlv.am/public/uploads/video_stories/1746110187IMG_7658.MOV",
-      thumbnail: "https://picsum.photos/90/90?random=4",
+      thumbnail: "https://vlv.am/public/uploads/all/681386962f8ba.webp",
       text: "Խորոված պատրաստող սարքեր",
       alt: "Man sitting outdoors with sunglasses"
     },
     {
       id: 5,
       video: "https://vlv.am/public/uploads/video_stories/1741697936NB_PRO900_10_OPT1_9X16_MUTED_MIN_TEXTLESS.mp4",
-      thumbnail: "https://picsum.photos/90/90?random=5",
+      thumbnail: "https://vlv.am/public/uploads/all/67d03388e95e8.webp",
       text: "Բլենդերներ",
       alt: "Black blender with fruit smoothie"
     },
     {
       id: 6,
       video: "https://vlv.am/public/uploads/video_stories/1736762605IMG_5319.MOV",
-      thumbnail: "https://picsum.photos/90/90?random=6",
+      thumbnail: "https://vlv.am/public/uploads/all/6784e4c2e64f4.webp",
       text: "Դռներ",
       alt: "White door with silver handle"
     }
