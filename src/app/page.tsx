@@ -234,7 +234,7 @@ export default function Home() {
         {showVideoPlayer && (
           <div className="fixed inset-0 bg-black flex items-center justify-center z-50 overflow-hidden">
             <div 
-              className="relative w-full h-full video-player-mobile video-player-desktop overflow-hidden"
+              className="relative w-full h-full video-player-mobile video-player-desktop overflow-hidden py-4 md:py-0"
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}
